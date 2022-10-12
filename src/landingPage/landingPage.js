@@ -1,25 +1,11 @@
-import {
-  Text,
-  Flex,
-  Center,
-  Spacer,
-  VStack,
-  Grid,
-  Button,
-  Box,
-  Divider,
-  Image,
-  HStack,
-  Stack,
-  Heading,
-  GridItem,
-} from "@chakra-ui/react";
+import { Flex, Grid, Box, GridItem, Link, Spacer } from "@chakra-ui/react";
+import { Link as ReachLink } from "react-router-dom";
 import NavBar from "../components/navBar";
 
 export default function LandingPage() {
   return (
     <>
-      <Flex bg="brand.100" h={"4xl"}>
+      <Flex bg="brand.100" h={"5xl"}>
         <Box padding="4">
           <NavBar />
         </Box>
@@ -37,7 +23,7 @@ export default function LandingPage() {
             rowEnd={4}
             colStart={1}
             colEnd={1}
-            h="1"
+            h="2"
           >
             GAO MENGQI
           </GridItem>
@@ -49,12 +35,14 @@ export default function LandingPage() {
             rowStart={6}
             rowEnd={6}
             colStart={1}
-            colEnd={1}
-            h="1"
+            colEnd={2}
+            h="2"
           >
-            Computer Science Undergraduate in National Unversity of Singapore
-            and a crochet queen
+            Interested in web development and crochet <Spacer />
+            Currently studying Computer Science in National University of
+            Singapore
           </GridItem>
+
           <GridItem
             fontFamily={"EB Garamond"}
             fontSize={"9xl"}
@@ -65,8 +53,11 @@ export default function LandingPage() {
             h="2"
             bg="brand.100"
           >
-            WORK
+            <Link as={ReachLink} to="/work">
+              WORK
+            </Link>
           </GridItem>
+
           <GridItem
             fontFamily={"EB Garamond"}
             fontSize={"9xl"}
@@ -74,10 +65,12 @@ export default function LandingPage() {
             rowEnd={4}
             colStart={2}
             colEnd={5}
-            h="1"
+            h="2"
             bg="brand.100"
           >
-            ABOUT
+            <Link as={ReachLink} to="/about">
+              ABOUT
+            </Link>
           </GridItem>
           <GridItem
             fontFamily={"EB Garamond"}
@@ -89,7 +82,9 @@ export default function LandingPage() {
             h="2"
             bg="brand.100"
           >
-            CONTACT
+            <Link as={ReachLink} to="/contact">
+              CONTACT
+            </Link>
           </GridItem>
         </Grid>
       </Flex>
