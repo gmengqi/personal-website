@@ -1,4 +1,4 @@
-import { Flex, Grid, Box, GridItem, Link, Spacer } from "@chakra-ui/react";
+import { Flex, Grid, Box, GridItem, Link, Spacer, Text } from "@chakra-ui/react";
 import { Link as ReachLink } from "react-router-dom";
 import NavBar from "../components/navBar";
 
@@ -25,7 +25,9 @@ export default function LandingPage() {
             colEnd={1}
             h="2"
           >
+          <Text padding={4} align={"left"}>
             GAO MENGQI
+            </Text>
           </GridItem>
 
           <GridItem
@@ -38,9 +40,11 @@ export default function LandingPage() {
             colEnd={2}
             h="2"
           >
-            Interested in web development and crochet <Spacer />
-            Currently studying Computer Science in National University of
-            Singapore
+            <Text padding={4} align={"left"}>
+              Interested in web development and crochet <Spacer />
+              Currently studying Computer Science in National University of
+              Singapore
+            </Text>
           </GridItem>
 
           <GridItem

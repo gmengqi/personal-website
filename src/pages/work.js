@@ -32,7 +32,7 @@ export default function About() {
           fontFamily={"EB Garamond"}
           fontSize={"3xl"}
         >
-          Projects
+          <Text align={"left"}>Projects</Text>
         </GridItem>
         <GridItem
           rowStart={8}
@@ -43,10 +43,11 @@ export default function About() {
           fontWeight={"thin"}
           fontSize={"md"}
         >
-          This page features some of my projects I have embarked on during my
-          free time! <Spacer />
-          I'm learning and gaining new skills everyday and looking for new
-          projects to do
+          <Text align={"left"}>
+            This page features some of my projects I have embarked on during my
+            free time! I'm learning and gaining new skills everyday and looking
+            for new projects to do
+          </Text>
         </GridItem>
         <GridItem
           rowStart={3}
@@ -68,8 +69,8 @@ export default function About() {
           fontFamily={"EB Garamond"}
           fontSize={"8xl"}
         >
-         <Link as={ReachLink} to="/work/biggiebot">
-          BiggieBot{" "}
+          <Link as={ReachLink} to="/work/biggiebot">
+            BiggieBot{" "}
           </Link>
         </GridItem>
       </Grid>
