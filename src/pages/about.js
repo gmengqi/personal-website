@@ -6,7 +6,7 @@ import {
   GridItem,
   Image,
   Spacer,
-  Heading,
+  Heading,git
 } from "@chakra-ui/react";
 import me from "../images/me.jpg";
 import NavBarHome from "../components/navBarHome";
