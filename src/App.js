@@ -6,6 +6,8 @@ import LandingPage from "./landingPage/landingPage";
 import About from "./pages/about"; 
 import Work from "./pages/work"; 
 import Contact from "./pages/contact"; 
+import HawkerTown from "./pages/hawkerTown";
+import BiggieBot from "./pages/teleBot";
 
 export default function App() {
   return (
@@ -15,6 +17,8 @@ export default function App() {
         <Route path="/about" exact element={<About />} />
         <Route path="/work" exact element={<Work />} />
         <Route path="/contact" exact element={<Contact />} />
+        <Route path="/work/hawkertown" exact element={<HawkerTown />} />
+        <Route path="/work/biggiebot" exact element={<BiggieBot />} />
       </Routes>
     </div>
   );
